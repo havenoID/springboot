@@ -1,0 +1,13 @@
+#语法学习:http://www.ruanyifeng.com/blog/2016/07/yaml.html
+logging:
+  config: classpath:log4j2.xml
+server:
+  port: 8081
+user:
+  id: 1
+  name: limin
+  cars:
+   - brand: a
+     price: 1
+   - brand: b
+     price: 2

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration status="info">
 
-    <Properties>
-        <Property name="LOG_PATH">/data/applogs/Hello-Spring—Boot/logs</Property>
-        <Property name="LOG_NAME">app</Property>
-    </Properties>
+<!--    <Properties>-->
+<!--        <Property name="LOG_PATH">/data/applogs/Hello-Spring—Boot/logs</Property>-->
+<!--        <Property name="LOG_NAME">app</Property>-->
+<!--    </Properties>-->
 
-    <Appenders>
+<!--    <Appenders>-->
 
-        <!--日志输出到控制台-->
-        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %t [%p] %c{1} %m%n"/>
-        </Console>
+<!--        &lt;!&ndash;日志输出到控制台&ndash;&gt;-->
+<!--        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">-->
+<!--            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %t [%p] %c{1} %m%n"/>-->
+<!--        </Console>-->
 
-        <!--日志输出到文件-->
-        <RollingRandomAccessFile name="FileAppender" fileName="${LOG_PATH}/${LOG_NAME}.log" filePattern="${LOG_PATH}/${LOG_NAME}.%d{yyyy-MM-dd}.log">
-            <PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n"/>
-            <Policies>
-                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
-            </Policies>
-        </RollingRandomAccessFile>
-    </Appenders>
+<!--        &lt;!&ndash;日志输出到文件&ndash;&gt;-->
+<!--        <RollingRandomAccessFile name="FileAppender" fileName="${LOG_PATH}/${LOG_NAME}.log" filePattern="${LOG_PATH}/${LOG_NAME}.%d{yyyy-MM-dd}.log">-->
+<!--            <PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n"/>-->
+<!--            <Policies>-->
+<!--                <TimeBasedTriggeringPolicy interval="1" modulate="true" />-->
+<!--            </Policies>-->
+<!--        </RollingRandomAccessFile>-->
+<!--    </Appenders>-->
 
-    <loggers>
-        <root level="info">
-            <appender-ref ref="ConsoleAppender"/>
-            <appender-ref ref="FileAppender"/>
-        </root>
-    </loggers>
+<!--    <loggers>-->
+<!--        <root level="info">-->
+<!--            <appender-ref ref="ConsoleAppender"/>-->
+<!--            <appender-ref ref="FileAppender"/>-->
+<!--        </root>-->
+<!--    </loggers>-->
 
 </configuration>

@@ -23,8 +23,8 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ApiOperation(value="spring boot example", notes="test")
-    public String hello(@RequestParam("userName") String userName) {
-        return "WelCome to Spring Boot World, " + userName;
+    public String hello() {
+        return "WelCome to Spring Boot World";
     }
 
     @ApiOperation(value="get user", notes="get user info")

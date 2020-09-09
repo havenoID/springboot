@@ -1,7 +1,6 @@
 package com.springboot.learn.statemachine.config;
 
 import com.springboot.learn.model.Order;
-import com.springboot.learn.statemachine.action.PayAction;
 import com.springboot.learn.statemachine.event.OrderStatusChangeEventEnum;
 import com.springboot.learn.statemachine.state.OrderStatusEnum;
 import org.springframework.context.annotation.Bean;
